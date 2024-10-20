@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Network Traffic Classifier</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Network Traffic Classifier</h1>
+      <p>Upload a CSV file to predict network traffic behavior:</p>
+
+      <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" name="file" id="file" required />
+        <button type="submit">Upload</button>
+      </form>
+
+      <div id="results" class="results">
+        <h3>Results:</h3>
+        <ul id="result-list"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
